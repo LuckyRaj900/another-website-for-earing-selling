@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Simo Crystal Co. modern crystal earring boutique inspired by @simocrystal.co. Shop cute handmade crystal drops, hoops, studs, and custom sparkle sets.">
+  <title>Simo Crystal Co. | Crystal Earrings Boutique</title>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="preconnect" href="https://unpkg.com">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="sparkle-field" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Simo Crystal Co. home">
+      <span class="brand-mark">SC</span>
+      <span>
+        <strong>Simo Crystal Co.</strong>
+        <small>@simocrystal.co</small>
+      </span>
+    </a>
+
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      <a href="#shop">Shop</a>
+      <a href="#drops">Drops</a>
+      <a href="#custom">Custom</a>
+      <a href="#journal">Lookbook</a>
+    </nav>
+
+    <div class="header-actions">
+      <a class="icon-link" href="https://www.instagram.com/simocrystal.co?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noreferrer" aria-label="Open Instagram">
+        <i data-lucide="instagram"></i>
+      </a>
+      <button class="icon-link" id="cartToggle" type="button" aria-label="Open cart">
+        <i data-lucide="shopping-bag"></i>
+        <span id="cartCount">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Crystal earrings, tiny magic, big glow</p>
+        <h1 id="hero-title">Simo Crystal Co.</h1>
+        <p class="hero-text">A cute, modern boutique for dreamy earrings inspired by the sparkle-first world of @simocrystal.co. Pick a ready drop or build your own crystal color story.</p>
+        <div class="hero-actions">
+          <a class="primary-btn" href="#shop">
+            <i data-lucide="sparkles"></i>
+            Shop the crystal bar
+          </a>
+          <a class="ghost-btn" href="#custom">Design custom pair</a>
+        </div>
+      </div>
+
+      <div class="hero-gallery" aria-label="Featured earring images">
+        <article class="hero-card large">
+          <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=1100&q=85" alt="Elegant crystal jewelry on soft silk">
+          <div>
+            <span>New Drop</span>
+            <strong>Moonlit Crystal Hoops</strong>
+          </div>
+        </article>
+        <article class="hero-card small top-card">
+          <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=800&q=85" alt="Fine jewelry with pearl and crystal styling">
+          <div>
+            <span>Best Seller</span>
+            <strong>Blush Pearl Drops</strong>
+          </div>
+        </article>
+        <article class="hero-card small bottom-card">
+          <img src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=800&q=85" alt="Sparkling jewelry details in warm light">
+          <div>
+            <span>Gift Pick</span>
+            <strong>Stardust Studs</strong>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="ticker" aria-label="Store highlights">
+      <span>Handmade shine</span>
+      <span>Crystal color matching</span>
+      <span>DM-friendly orders</span>
+      <span>Gift-ready packing</span>
+      <span>Soft glam aesthetic</span>
+    </section>
+
+    <section class="quick-shop" aria-label="Quick shopping categories">
+      <a href="#shop" data-filter-link="drop">Drops</a>
+      <a href="#shop" data-filter-link="hoop">Hoops</a>
+      <a href="#shop" data-filter-link="stud">Studs</a>
+      <a href="#shop" data-filter-link="pearl">Pearls</a>
+      <a href="#shop" data-filter-link="custom">Custom</a>
+    </section>
+
+    <section id="drops" class="section split-section">
+      <div>
+        <p class="eyebrow">The Instagram sparkle board</p>
+        <h2>Designed like tiny treasures for reels, selfies, and everyday outfits.</h2>
+      </div>
+      <div class="feature-grid">
+        <article>
+          <i data-lucide="gem"></i>
+          <h3>Crystal matched</h3>
+          <p>Every pair is styled around color, light, and face-framing sparkle.</p>
+        </article>
+        <article>
+          <i data-lucide="wand-sparkles"></i>
+          <h3>Cute but polished</h3>
+          <p>Soft pastels, glossy neutrals, and clean modern shopping details.</p>
+        </article>
+        <article>
+          <i data-lucide="package-check"></i>
+          <h3>Ready to gift</h3>
+          <p>Each drop has a mood, name, styling idea, and giftable finish.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="shop" class="section shop-section" aria-labelledby="shop-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Shop earrings</p>
+          <h2 id="shop-title">Crystal Drop Catalog</h2>
+        </div>
+        <div class="filter-tabs" role="group" aria-label="Filter products">
+          <button class="active" type="button" data-filter="all">All</button>
+          <button type="button" data-filter="drop">Drops</button>
+          <button type="button" data-filter="hoop">Hoops</button>
+          <button type="button" data-filter="stud">Studs</button>
+          <button type="button" data-filter="custom">Custom</button>
+        </div>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <section id="custom" class="section custom-lab" aria-labelledby="custom-title">
+      <div class="custom-panel">
+        <p class="eyebrow">Custom color lab</p>
+        <h2 id="custom-title">Build your own Simo sparkle pair</h2>
+        <p>Choose a crystal mood, metal finish, and length. The preview below updates your order note for Instagram DM checkout.</p>
+
+        <form class="builder" id="builderForm">
+          <label>
+            Crystal mood
+            <select id="moodSelect">
+              <option>Rose Quartz Blush</option>
+              <option>Ocean Aura Blue</option>
+              <option>Clear Stardust</option>
+              <option>Lavender Dream</option>
+            </select>
+          </label>
+          <label>
+            Metal finish
+            <select id="metalSelect">
+              <option>Gold plated</option>
+              <option>Silver tone</option>
+              <option>Rose gold</option>
+            </select>
+          </label>
+          <label>
+            Length
+            <input id="lengthRange" type="range" min="2" max="8" value="4">
+          </label>
+          <button class="primary-btn" type="submit">
+            <i data-lucide="send"></i>
+            Prepare DM order
+          </button>
+        </form>
+      </div>
+      <aside class="preview-card" aria-live="polite">
+        <div class="earring-preview">
+          <span></span>
+          <span></span>
+        </div>
+        <p>Custom preview</p>
+        <h3 id="previewTitle">Rose Quartz Blush in Gold plated</h3>
+        <small id="previewLength">4 cm drop length</small>
+      </aside>
+    </section>
+
+    <section id="journal" class="section lookbook" aria-labelledby="lookbook-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Lookbook</p>
+          <h2 id="lookbook-title">Cute styling moods</h2>
+        </div>
+      </div>
+      <div class="lookbook-grid">
+        <article>
+          <img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=900&q=85" alt="Soft glam makeup look with jewelry styling">
+          <h3>Soft Glam</h3>
+          <p>Pair pearl drops with glossy makeup and a satin top.</p>
+        </article>
+        <article>
+          <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=900&q=85" alt="Beauty table with blush and accessories">
+          <h3>Birthday Glow</h3>
+          <p>Choose crystal hoops for party photos and candlelight shine.</p>
+        </article>
+        <article>
+          <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=900&q=85" alt="Fashion styling in a modern boutique mood">
+          <h3>Everyday Cute</h3>
+          <p>Tiny studs and huggies make the clean-girl stack effortless.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section reviews" aria-labelledby="reviews-title">
+      <p class="eyebrow">Customer notes</p>
+      <h2 id="reviews-title">The sparkle report</h2>
+      <div class="review-row">
+        <blockquote>“The packaging felt like opening a tiny jewelry cloud. The blue pair catches light beautifully.”</blockquote>
+        <blockquote>“My custom lavender drops matched my birthday outfit exactly. Super cute and photo-ready.”</blockquote>
+        <blockquote>“Small business energy, boutique polish, and the earrings are so light.”</blockquote>
+      </div>
+    </section>
+
+    <section class="section faq" aria-labelledby="faq-title">
+      <div>
+        <p class="eyebrow">Details</p>
+        <h2 id="faq-title">How orders work</h2>
+      </div>
+      <div class="faq-list">
+        <details open>
+          <summary>How do I order?</summary>
+          <p>Add items to the bag, then use the Instagram checkout button to send a prepared DM to @simocrystal.co.</p>
+        </details>
+        <details>
+          <summary>Can I request another color?</summary>
+          <p>Yes. Use the custom color lab and mention your outfit, event date, and preferred metal finish.</p>
+        </details>
+        <details>
+          <summary>Are the earrings heavy?</summary>
+          <p>The catalog is written for lightweight daily wear, with statement styles marked clearly.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true" aria-label="Shopping bag">
+    <div class="cart-header">
+      <h2>Your sparkle bag</h2>
+      <button class="icon-link" id="cartClose" type="button" aria-label="Close cart">
+        <i data-lucide="x"></i>
+      </button>
+    </div>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="cart-footer">
+      <p><span>Estimated total</span><strong id="cartTotal">$0</strong></p>
+      <a id="checkoutLink" class="primary-btn" href="https://www.instagram.com/simocrystal.co?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noreferrer">
+        <i data-lucide="instagram"></i>
+        Checkout by Instagram DM
+      </a>
+    </div>
+  </aside>
+
+  <footer class="site-footer">
+    <div>
+      <strong>Simo Crystal Co.</strong>
+      <p>Crystal earrings boutique concept inspired by @simocrystal.co.</p>
+    </div>
+    <a href="#top">Back to top</a>
+  </footer>
+
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
